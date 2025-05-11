@@ -2,8 +2,6 @@
 
 A lightweight, terminal-based multi-client chat app built using Java Sockets. Perfect for learning core networking, multithreading, and client-server architecture. 🚀
 
----
-
 ## 🧩 Features
 
 - 🔁 Real-time message broadcasting
@@ -11,20 +9,17 @@ A lightweight, terminal-based multi-client chat app built using Java Sockets. Pe
 - 💻 Terminal-based user interface
 - ⚙️ Built using standard Java (`Socket`, `ServerSocket`, `Thread`)
 
----
-
 ## 📦 Project Structure
 
 ```plaintext
 📁 java-tcp-chat/
+|
 ├── ChatServer.java # 💼 Server implementation
 ├── ChatClient.java # 🙋 Client implementation
 ├── LICENSE # 📜 MIT License
 ├── SECURITY.md # 🔒 Security policy
 └── README.md # 🧾 You're reading this
 ```
-
----
 
 ## ⚙️ Getting Started
 
@@ -33,8 +28,6 @@ A lightweight, terminal-based multi-client chat app built using Java Sockets. Pe
 - ✅ Java JDK 8 or above
 - ✅ Basic terminal knowledge
 - ✅ Optional: IntelliJ / Eclipse for IDE support
-
----
 
 ### 🧪 How to Run
 
@@ -67,7 +60,7 @@ java ChatClient
 
 - **🚫 No rate limiting or input validation**
 
-See `SECURITY.md` for more info.
+**See `SECURITY.md` for more info.**
 
 ## 🚀 Future Enhancements
 
@@ -99,3 +92,36 @@ See `SECURITY.md` for more info.
 Contributions, issues, and feature requests are welcome!
 
 Feel free to fork the repo and submit a PR. 📬
+
+## 🎯 Output
+
+### 🖥️ Server Terminal Output
+
+```bash
+Server started. Waiting for clients...
+Client connected: /127.0.0.1:52314
+Client connected: /127.0.0.1:52315
+Received: Hello from Client 1
+Broadcasting message to all clients...
+Received: Hi Client 1, this is Client 2
+Broadcasting message to all clients...
+```
+
+**The server listens for incoming connections and relays every message it receives to all connected clients.**
+-
+
+- ### 💬 Client Terminal Output (Example: Client 1)
+
+```bash
+Connected to the chat server.
+You: Hello from Client 1
+Client2: Hi Client 1, this is Client 2
+```
+
+- ### 💬 Client Terminal Output (Example: Client 2)
+
+```bash
+Connected to the chat server.
+Client1: Hello from Client 1
+You: Hi Client 1, this is Client 2
+```

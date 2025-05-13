@@ -11,7 +11,7 @@
 If you discover a vulnerability in the Java TCP Chat Application:
 
 1. **Do not disclose it publicly.**
-2. Email your findings directly to: `arshanth.security@protonmail.com`
+2. Email your findings directly to: `arshanthk@gmail.com`
 3. Provide detailed steps to reproduce the issue, proof-of-concept code, and the potential impact.
 
 All reports will be reviewed within **72 hours**, and appropriate action will be taken as quickly as possible.
